@@ -47,7 +47,7 @@ const Form = ({ visibility }) => {
     noteBox.appendChild(notesTitle);
     noteBox.appendChild(notesDetails);
     noteTab.appendChild(noteBox);
-    const data = localStorage.getItem("notes");
+    visibility((pre) => !pre);
   };
   return (
     <div className="form">
